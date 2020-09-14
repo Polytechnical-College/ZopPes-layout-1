@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Сетка</title>
+    <style media="screen">
+        :root{
+            --background-color: #333;
+            --color:#fff;
+            --padding: 30px;
+        }
+
+        body{
+            background-color: var(--background-color);
+            color: var(--color);
+            font-size: Arial;
+        }
+
+        h1.list-name{
+            text-align: center;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+        }
+        .grid> article{
+            text-align: center;
+            padding: var(--padding);
+            border: 3px solid var(--color);
+            font-size: Arial;
+        }
+        .grid > article h3.name{
+            margin-top: 0;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="List-name">Список</h1>
+</header>
+<hr>
+
+<main class="grid">
+    <article>
+        <headr>
+            <h3 class="name">Элеиент</h3>
+        </headr>
+        <p class="desc">Описание</p>
+        <footer >
+            <span>08.09.2020</span>
+        </footer>
+    </article>
+</main>
+</body>
+</html>
